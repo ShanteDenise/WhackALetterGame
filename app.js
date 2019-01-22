@@ -42,3 +42,10 @@ function peep() {
         if(!timeUp) peep()
     }, time)
 }
+
+function startGame(){
+    peep()
+    setTimeout(() => {
+        timeUp = true;
+    }, 5000)
+}
