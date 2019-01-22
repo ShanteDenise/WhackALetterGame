@@ -20,14 +20,12 @@ holes.forEach(hole => {
         hole.childNodes[1].classList.add(letters[randLetter])
         lastLetter = letters[randLetter]
     }, 10)
-    console.log(hole.childNodes[1])
 
 })
 
 function randomHole(holes){
     const randomNum = Math.floor(Math.random() * 8) + 1
     const hole = holes[randomNum]
-    console.log(randomNum)
     return hole;
    
 }
@@ -49,3 +47,12 @@ function startGame(){
         timeUp = true;
     }, 5000)
 }
+
+function scoreIncrease(){
+    userScore++
+    console.log(userScore)
+    score.textContent = userScore
+}
+
+
+holes.forEach(hole => hole.addEventListener('click', scoreIncrease));
