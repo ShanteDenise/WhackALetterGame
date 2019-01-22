@@ -1,6 +1,12 @@
 body{
     background: #ffc600;
 }
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
 
 
 
@@ -28,7 +34,7 @@ body{
 
 .hole:after {
     display: block;
-    background: url(dirt.svg) bottom center no-repeat;
+    background: url(img/dirt.svg) bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
@@ -37,3 +43,122 @@ body{
     z-index: 2;
     bottom: -30px;
   }
+
+  .alphabet{
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+      transition:all 0.4s;
+    }
+    
+.hole.up .alphabet{
+      top: 0;
+  }
+
+.a{
+  background: url('img/A.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.b{
+  background: url('img/B.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.c{
+  background: url('img/C.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.d{
+  background: url('img/D.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.e{
+  background: url('img/E.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.f{
+  background: url('img/F.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.g{
+  background: url('img/G.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.h{
+  background: url('img/H.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.i{
+  background: url('img/I.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.j{
+  background: url('img/J.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.k{
+  background: url('img/K.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.l{
+  background: url('img/L.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.m{
+  background: url('img/M.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.n{
+  background: url('img/N.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.o{
+  background: url('img/O.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.p{
+  background: url('img/P.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.q{
+  background: url('img/Q.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.r{
+  background: url('img/R.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.s{
+  background: url('img/S.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.t{
+  background: url('img/T.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.u{
+  background: url('img/U.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.v{
+  background: url('img/V.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.w{
+  background: url('img/W.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.x{
+  background: url('img/X.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.y{
+  background: url('img/Y.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+.z{
+  background: url('img/Z.svg') bottom center no-repeat;
+  background-size: 60%;
+}
+
+  
