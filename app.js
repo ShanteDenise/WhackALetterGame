@@ -24,4 +24,11 @@ holes.forEach(hole => {
 
 })
 
-
+function randomHole(){
+    const randomNum = Math.floor(Math.random() * 9) + 1
+    const hole = holes[randomNum]
+    console.log(randomNum)
+    return hole;
+   
+}
+randomHole()
