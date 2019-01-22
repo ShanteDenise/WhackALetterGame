@@ -17,18 +17,28 @@ holes.forEach(hole => {
         rand()
     }
     setTimeout(function(){
-        hole.childNodes[1].className = "alphabet " + letters[randLetter]
+        hole.childNodes[1].classList.add(letters[randLetter])
         lastLetter = letters[randLetter]
     }, 10)
     console.log(hole.childNodes[1])
 
 })
 
-function randomHole(){
-    const randomNum = Math.floor(Math.random() * 9) + 1
+function randomHole(holes){
+    const randomNum = Math.floor(Math.random() * 8) + 1
     const hole = holes[randomNum]
     console.log(randomNum)
     return hole;
    
 }
-randomHole()
+
+
+function peep() {
+    const time = Math.floor(Math.random() * 1000 ) + 200;
+    const hole = randomHole(holes)
+    hole.classList.add('up')
+    setTimeout(() => {
+        hole.classList.remove('up')
+        if(!timeUp) peep()
+    }, time)
+}
