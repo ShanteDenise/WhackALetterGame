@@ -13,6 +13,7 @@ This game will be great for kids 2-5 years old learning the alphabet.
 
 
 Currently Working On:
+----
 
 1. Getting sound to play onclick of each letter.
 
