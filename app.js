@@ -54,8 +54,6 @@ function startGame(){
    
 }
 
-
-
 function scoreIncrease(hole){
     //if timeUp is false and the letter is up add to userScore on click
     if(timeUp === false && hole.classList[2] === 'up'){
@@ -64,7 +62,7 @@ function scoreIncrease(hole){
         hole.classList.remove('up')
     }
     // console.log(userScore)
-    if(userScore == 10){
+    if(userScore == 26){
         alert("Yaaaaay! You win! " + "Your Score is " + userScore)
         userScore = 0;
         score.textContent = userScore
