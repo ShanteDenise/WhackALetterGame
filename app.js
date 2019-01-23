@@ -1,3 +1,4 @@
+
 const holes = document.querySelectorAll('.hole')
 const score = document.querySelector('.score')
 const alphabet = document.querySelectorAll('.alphabet')
@@ -5,6 +6,7 @@ let lastHole;
 let timeUp = true;
 let userScore = 0;
 let lastLetter;
+let timer;
 
 //Get a random letter on each hole. 
 holes.forEach(hole => {
@@ -37,7 +39,7 @@ function peep() {
     hole.classList.add('up')
     setTimeout(() => {
         hole.classList.remove('up')
-        if(!timeUp) peep()
+        // if(!timeUp) peep()
     }, time)
 }
 
@@ -45,13 +47,14 @@ function startGame(){
     //When you start game time up is set to false
     timeUp = false;
     //Call function peep
-    peep()
-    //Game lasts 50 seconds, users score is equal to 0 on the start of the game
-    setTimeout(() => {
-        timeUp = true;
-        userScore = 0;
-    }, 60000)
+    //Game lasts 20 seconds, users score is equal to 0 on the start of the game
+    timer = window.setInterval(() => {
+        peep() 
+    }, 1500)
+   
 }
+
+
 
 function scoreIncrease(hole){
     //if timeUp is false and the letter is up add to userScore on click
@@ -60,7 +63,19 @@ function scoreIncrease(hole){
         score.textContent = userScore
         hole.classList.remove('up')
     }
+    // console.log(userScore)
+    if(userScore == 5){
+        alert("You win" + "Your Score is " + userScore)
+        userScore = 0;
+        score.textContent = userScore
+        window.clearInterval(timer);
+    }  
+
+   
+    console.log(timer)
 }
+
+
 
 //Loop through holes adding on click function and increase score
 holes.forEach(hole => hole.addEventListener('click', () => scoreIncrease(hole) ))
