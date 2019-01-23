@@ -64,8 +64,8 @@ function scoreIncrease(hole){
         hole.classList.remove('up')
     }
     // console.log(userScore)
-    if(userScore == 5){
-        alert("Yaaaaay! You win!")
+    if(userScore == 10){
+        alert("Yaaaaay! You win! " + "Your Score is " + userScore)
         userScore = 0;
         score.textContent = userScore
         window.clearInterval(timer);
