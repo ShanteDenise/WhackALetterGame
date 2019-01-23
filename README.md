@@ -8,8 +8,9 @@ App 2 of 30.
 This game will be great for kids 2-5 years old learning the alphabet. 
 
 
-
-
+Photo of App
+------
+![screen shot 2019-01-23 at 8 11 09 am](https://user-images.githubusercontent.com/33140493/51608901-bdf87980-1ee6-11e9-82ca-88c3c10430f1.png)
 
 
 Currently Working On:
